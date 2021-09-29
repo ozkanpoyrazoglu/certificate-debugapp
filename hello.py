@@ -13,15 +13,7 @@ def get_shell_script_output_using_communicate():
         raise Exception("Error "+str(stderr))
     return stdout.decode('utf-8')
 
-# def get_shell_script_output_using_check_output():
-#     stdout = check_output(['./test.sh']).decode('utf-8')
-#     return stdout
-
 app = Flask(__name__)
-
-# @app.route("/")
-# def hello_world():
-#     return "Hello World!"
 
 @app.route('/',methods=['GET',])
 def home():
